@@ -1,13 +1,7 @@
 
-html {
-    font-size: 62.5%;
-    font-weight: 400;
-}
 
-.header {
-    display: flex;
-}
-.header-logo {
+
+.navbar-brand {
     text-align: center;
 }
 .navbar .nav-link {
@@ -15,7 +9,9 @@ html {
 }
 .image-frame {
     border: 1px solid #e1e1e1;
+    border-radius: 5px;
 }
 .image-frame img {
+    border-radius: 5px;
     width: 100%;
 }
