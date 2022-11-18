@@ -1,4 +1,8 @@
 {
-  "editor.fontSize": 12,
-  "editor.fontFamily": "Fira Code"
+   "prettier.tabWidth": 3,
+   "editor.formatOnSave": true,
+   "editor.defaultFormatter": "esbenp.prettier-vscode",
+   "editor.fontFamily": "Fira Code",
+   "editor.fontSize": 12,
+   "prettier.printWidth": 80
 }

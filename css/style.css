@@ -1,17 +1,25 @@
-
-
+.main {
+   background-image: url("../images/tm-astro-bg.jpg");
+   background-size: cover;
+   min-height: 100vh;
+   max-height: 100%;
+}
 
 .navbar-brand {
-    text-align: center;
+   text-align: center;
 }
 .navbar .nav-link {
-    font-size: 1.8rem;
+   font-size: 1.8rem;
 }
 .image-frame {
-    border: 1px solid #e1e1e1;
-    border-radius: 5px;
+   border: 1px solid #e1e1e1;
+   border-radius: 5px;
 }
 .image-frame img {
-    border-radius: 5px;
-    width: 100%;
+   border-radius: 5px;
+   width: 100%;
+}
+h5:last-child {
+   margin-bottom: 0;
+   padding-bottom: 5px;
 }
