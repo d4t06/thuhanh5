@@ -1,4 +1,4 @@
-.main {
+body {
    background-image: url("../images/tm-astro-bg.jpg");
    background-size: cover;
    min-height: 100vh;
@@ -20,6 +20,8 @@
    width: 100%;
 }
 h5:last-child {
-   margin-bottom: 0;
-   padding-bottom: 5px;
+   text-align: center;
+   font-size: 1rem;
+   font-weight: 300;
+   font-style: italic;
 }

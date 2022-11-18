@@ -5,62 +5,78 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Thiên Văn Việt Nam</title>
+      <!-- css -->
       <link
          href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap"
          rel="stylesheet"
       />
+      <link
+         rel="stylesheet"
+         href="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.css"
+      />
       <link rel="stylesheet" href="./css/bootstrap.min.css" />
       <link rel="stylesheet" href="./css/main.css" />
       <link rel="stylesheet" href="./css/style.css" />
-      <script src="./js/script.js" defer></script>
+      <!-- script -->
       <script
-         src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
-         integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
-         crossorigin="anonymous"
-         referrerpolicy="no-referrer"
+         src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+         defer
       ></script>
-      <script src="./js/bootstrap.bundle.min.js" defer></script>
-      <script src="./js/bootstrap.min.js"></script>
+      <script src="./js/script.js" defer></script>
+      <script src="./js/bootstrap.bundle.min.js"></script>
+      <script
+         src="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.js"
+         defer
+      ></script>
+      <script
+         src="https://unpkg.com/bootstrap-table@1.19.1/dist/extensions/mobile/bootstrap-table-mobile.js"
+         defer
+      ></script>
    </head>
    <body>
       <div class="main">
          <div class="container">
-            <nav class="navbar navbar-expand-lg">
-               <a class="navbar-brand" href="#">
-                  <img id="logo" src="./images/logo.png" alt="" />
-                  <h5>ASTRONOMIA</h5>
-               </a>
-               <button
-                  class="navbar-toggler"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#nav"
-                  aria-controls="nav"
-                  aria-label="Toggle navigation"
-               >
-                  <span class="navbar-toggler-icon"></span>
-               </button>
-               <div class="collapse navbar-collapse" id="nav">
-                  <ul class="navbar-nav">
-                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"
-                           >Home</a
-                        >
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#">Introduce</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link">Courses</a>
-                     </li>
-                  </ul>
-               </div>
-            </nav>
+            <div class="header">
+               <nav class="navbar navbar-expand-lg">
+                  <a class="navbar-brand" href="#">
+                     <img id="logo" src="./images/logo.png" alt="" />
+                     <h5>ASTRONOMIA</h5>
+                  </a>
+                  <button
+                     class="navbar-toggler"
+                     data-bs-toggle="collapse"
+                     data-bs-target="#nav"
+                     aria-controls="nav"
+                     aria-label="Toggle Navigation"
+                  >
+                     <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="nav">
+                     <ul class="navbar-nav">
+                        <li class="nav-item">
+                           <a
+                              class="nav-link active"
+                              aria-current="page"
+                              href="#"
+                              >Home</a
+                           >
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#">Introduce</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link">Courses</a>
+                        </li>
+                     </ul>
+                  </div>
+               </nav>
+            </div>
 
+            <br />
             <div class="body">
-               <br />
                <h5>Các Hành Tinh Trong Hệ Mặt Trời</h5>
                <div class="container-lg">
                   <div class="row row-cols-2 g-3">
@@ -76,9 +92,6 @@
                                     src="./images/jupiter.png"
                                     class="d-block w-100"
                                     alt=""
-                                    data-bs-toggle="tooltip"
-                                    data-bs-placement="top"
-                                    title="da8wjduawujd"
                                  />
                                  <div
                                     class="carousel-caption d-none d-sm-block"
@@ -96,9 +109,6 @@
                                     src="./images/uranus.png"
                                     class="d-block w-100"
                                     alt="..."
-                                    data-bs-toggle="tooltip"
-                                    data-bs-placement="top"
-                                    title="Tooltip on top"
                                  />
                                  <div
                                     class="carousel-caption d-none d-sm-block"
@@ -116,9 +126,6 @@
                                     src="./images/saturn.png"
                                     class="d-block w-100"
                                     alt="..."
-                                    data-bs-toggle="tooltip"
-                                    data-bs-placement="top"
-                                    title="Tooltip on top"
                                  />
                                  <div
                                     class="carousel-caption d-none d-sm-block"
@@ -181,7 +188,7 @@
                               </div>
                            </div>
                         </div>
-                        <div class="row gy-3 gy-lg-0" style="margin-top: 11px">
+                        <div class="row gy-3 gy-lg-0" style="margin-top: 13px">
                            <div class="col-6">
                               <div
                                  class="image-frame"
@@ -251,10 +258,10 @@
                   để đăng ký)
                </h5>
                <table
-                  class="table table-striped table-light table-hover"
                   data-toggle="table"
                   data-mobile-responsive="true"
                   data-check-on-init="true"
+                  class="table table-striped table-light table-hover"
                >
                   <thead>
                      <tr>
@@ -265,33 +272,38 @@
                   </thead>
                   <tbody>
                      <tr>
-                        <td>C05</td>
+                        <td>CB001</td>
                         <td>Astronomy basic class</td>
                         <td>26/11/2002</td>
                      </tr>
                      <tr>
-                        <td>C05</td>
+                        <td>VT002</td>
                         <td>Astronomy basic class</td>
                         <td>26/11/2002</td>
                      </tr>
                      <tr>
-                        <td>C05</td>
+                        <td>QS001</td>
                         <td>Astronomy basic class</td>
                         <td>26/11/2002</td>
                      </tr>
                   </tbody>
                </table>
-               <br />
-               <h5>Copyright 2021 Bản quyền thuộc về Công ty Astronomia.</h5>
+            </div>
+            <br />
+            <div class="footer">
+               <div class="container">
+                  <h5>Copyright 2021 Bản quyền thuộc về Công ty Astronomia.</h5>
+                  <h5>Nguyen Huu Dat B2110118 &copy</h5>
+               </div>
             </div>
          </div>
       </div>
 
       <!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->
-      <!-- <div id="loader-wrapper">            
-    <div id="loader"></div>
-    <div class="loader-section section-left"></div>
-    <div class="loader-section section-right"></div>
-  </div> -->
+      <div id="loader-wrapper">
+         <div id="loader"></div>
+         <div class="loader-section section-left"></div>
+         <div class="loader-section section-right"></div>
+      </div>
    </body>
 </html>
